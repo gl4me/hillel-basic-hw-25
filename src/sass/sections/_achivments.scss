@@ -1,0 +1,92 @@
+.section-achivments {
+    background-color: $-bg;
+}
+
+.achivement-wrap {
+    padding: 20px;
+}
+
+.row-two-menu {
+    margin-top: 19px;
+}
+
+.achivement-logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-slider {
+    &--about {
+        text-align: center;
+        margin: 14px;
+    }
+}
+
+.achivement-txt {
+    font-size: $h3-upper;
+    color: $-regular;
+    line-height: $lh-17;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.achivement {
+    width: 300px;
+    height: 109px;
+    &--legal {
+        background-image: url('../../images/images/achivments/achivements1.svg');
+    }
+    &--red {
+        background-image: url('../../images/images/achivments/achivements2.svg');
+    }
+    &--leaders {
+        background-image: url('../../images/images/achivments/achivements3.svg');
+    }
+    &--ulf {
+        background-image: url('../../images/images/achivments/achivements4.svg');
+    }
+
+}
+
+.flex-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dot-d-none {
+    display: none;
+}
+
+
+.achivments-wrap {
+    padding: 40px 8px 81px 8px;
+    .carousel-indicators {
+        top: 100%;
+         button {
+             margin-top: 15px;
+         }
+    }
+    .benefits {
+        &--title {
+            font-weight: 700;
+            background-image: $-text-red-reversed;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &--subtitle {
+            color: $-white;
+            font-weight: 400;
+            line-height: $lh-26;
+            margin: 15px 0 22px 0;
+        }
+        &--contents {
+            font-size: $txt-lg;
+            color: $-white;
+            line-height: $lh-26;
+        }
+    }
+}

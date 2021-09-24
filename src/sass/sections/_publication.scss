@@ -1,0 +1,281 @@
+.switcher-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.can-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.can-toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  pointer-events: none;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+  opacity: 0.4;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.can-toggle label .can-toggle__label-text {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 32px;
+}
+.can-toggle label .can-toggle__switch {
+  position: relative;
+}
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  cursor: pointer;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  color: rgba(119, 119, 119, 0.5);
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch {
+  background-color: $-separator;
+
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  color: $-regular;
+  font-size: $txt-lg;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.can-toggle input[type="checkbox"]:hover ~ label {
+  width: 260px;
+  color: #6a6a6a;
+}
+.can-toggle input[type="checkbox"]:checked ~ label:hover {
+  color: $-regular;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: $-separator;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: $-regular;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: $-separator;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: $-regular;
+}
+.can-toggle label .can-toggle__label-text {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.can-toggle label .can-toggle__switch {
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+          transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: $-separator;
+}
+.can-toggle label .can-toggle__switch:before {
+  color: $-regular;
+  cursor: pointer;
+}
+.can-toggle label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: $-regular;
+  cursor: pointer;
+}
+
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(127px, 0, 0);
+          transform: translate3d(127px, 0, 0);
+}
+
+.can-toggle label {
+  width: 260px;
+  font-size: 14px;
+}
+.can-toggle label .can-toggle__switch {
+  height: 40px;
+  -webkit-flex: 0 0 134px;
+      -ms-flex: 0 0 134px;
+          flex: 0 0 134px;
+  border-radius: 10px;
+}
+.can-toggle label .can-toggle__switch:before {
+  left: 127px;
+  font-size: $txt-lg;
+  font-weight: 500;
+  text-transform: lowercase;
+  line-height: 40px;
+  width: 127px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 10px;
+  width: 127px;
+  line-height: 36px;
+  font-size: $txt-lg;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+
+.articles-button-postion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 60px;
+}
+
+.article-banner {
+  max-width: 909px;
+  margin: 0 auto;
+  .banner {
+    width: 100%;
+  }
+}
+
+.public-article {
+  &--title {
+    border-bottom: 4px solid $-bg-alt;
+    margin: 40px 0 40px 15px;
+    .article {
+      &-name {
+        font-size: $h2;
+        font-weight: 500;
+        color: $-regular;
+      }
+      &-data {
+        font-size: $txt-sm;
+        text-transform: uppercase;
+        color: $-text;
+      }
+    }
+  }
+
+  &--intro {
+    padding: 0 15px;
+    .intro-txt {
+      font-size: $txt-lg;
+      line-height: $lh-26;
+      color: $-black;
+    }
+  }
+
+  &--attention {
+    .attention-txt {
+      font-size: $h1-hero;
+      line-height: $lh-50;
+      background-image: $-red-text;
+      font-weight: 700;
+		  background-clip: text;
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &--requirement {
+    margin: 0 15px;
+    border-bottom: 4px solid $-separator;
+    .requirement {
+      &-title {
+        font-size: $h3;
+        font-weight: 500;
+        color: $-regular;
+      }
+      &-list {
+        list-style: decimal;
+        color: $-accent;
+        font-size: $txt-lg;
+        font-weight: 700;
+        line-height: 60px;
+        padding: 0 35px;
+        }
+      }
+  }
+
+  &--social {
+    .social-list {
+      display: flex;
+      margin: 20px 0 60px 15px;
+      .social-list-item {
+        width: 42px;
+        height: 42px;
+        background-color: $-bg;
+        margin-right: 10px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+    .requirement-txt {
+      font-size: $txt-lg;
+      line-height: $lh-26;
+      font-weight: 400;
+      color: $-black;
+    }
+}
+
+.spacing-txt-mb-4 {
+  margin-bottom: 40px;
+}
+
+.spacing-txt-mb-3 {
+  margin-bottom: 30px;
+}
+
+.spacing-txt-mb-2 {
+  margin-bottom: 20px;
+}
+
+.spacing-txt-mb-1 {
+  margin-bottom: 10px;
+}
+
+.google-ad-img {
+  max-width: 866px;
+  margin: 0 auto;
+  .google-add {
+    width: 100%;
+    height: 100%;
+  }
+}

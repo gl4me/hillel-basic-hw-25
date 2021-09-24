@@ -1,0 +1,153 @@
+.bgc--first-main-linear-services {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(210.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 40px;
+    &::after {
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-radius: inherit;
+        background-color: #CACADB;
+        height: 10px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-radius: inherit;
+        background-color: #E7E7F2;
+        height: 10px;
+    }
+    &::after {
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        z-index: -1;
+    }
+    &::before {
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        z-index: -2;
+    }
+}
+
+.bgc--first-main-linear-services-header {
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%), url('../../images/images/background/background5_main_keyboard.png') center / cover no-repeat;
+}
+
+.bgc--second-main-linear-services {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(200.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 40px;
+    padding: 80px 0 80px;
+    &::after {
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-radius: inherit;
+        background-color: #CACADB;
+        height: 10px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        border: inherit;
+        border-radius: inherit;
+        background-color: #E7E7F2;
+        height: 10px;
+    }
+    &::after {
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        z-index: -1;
+    }
+    &::before {
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        z-index: -2;
+    }
+}
+
+.services-page {
+    padding-top: 70px;
+}
+
+.cases-services-page {
+    margin-top: 70px;
+}
+
+.service-introduction {
+    display: flex;
+    justify-content: center;
+    &__content {
+        text-align: center;
+        padding: 50px 0 20px;
+        width: 45%;
+        .service-title {
+            font-size: $h1-hero;
+            line-height: $lh-50;
+            font-weight: 700;
+            background-image: $-red-text;
+		    background-clip: text;
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+            margin-top: 30px;
+        }
+        .service-intro {
+            font-size: $txt-xl;
+            line-height: $lh-30;
+            color: $-white;
+            margin: 20px 30px;
+        }
+        .button-article {
+            margin: 40px auto 0px;
+            .contact-form-link {
+                color: $-white;
+            }
+        }
+
+        .pointer-dialog {
+            pointer-events: all !important;
+        }
+        .spacing-top {
+            padding-top: 157px;
+            background-color: #707093;
+        }
+    }
+}
+
+.service-discription {
+    border-top: 4px solid $-text;
+    .service-second-title {
+        font-size: $txt-xxl;
+        color: $-white;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    .service-list {
+        column-count: 2;
+        &-item {
+            list-style:disc;
+            color: $-accent;
+            margin-left: 20px;
+            margin-right: 10px;
+            margin-bottom: 25px;
+            .list-item-txt {
+                font-size: $txt-lg;
+                line-height: $lh-26;
+                color: $-white;
+            }
+        }
+    }
+}
+

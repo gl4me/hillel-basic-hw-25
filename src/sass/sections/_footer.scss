@@ -1,0 +1,61 @@
+.section-footer, .section-footer-team {
+    background-color: $-bg;
+    .footer-container {
+        border-top: 4px solid #E6E6F0;
+        .footer-bar {
+            margin-top: 32px;
+            .footer-items {
+                a:hover {
+                    color: $-a-regular;
+                }
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .txt-main {
+                    font-style: $txt-md;
+                    font-weight: 500;
+                    color: $-regular;
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+                .map-link {
+                    font-size: $txt-sm;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $-accent;
+                    }
+                }
+                .txt-contact {
+                    font-style: $txt-md;
+                    font-weight: 700;
+                    &:hover {
+                        color: $-accent;
+                    }
+                }
+                .circle {
+                    width: 6px;
+                    height: 6px;
+                    border-width: 0 2px 2px 0;
+                    border-radius: 50px;
+                    display: inline-block;
+                    margin: 2px 4px;
+                    &--white {
+                        background-color: $-white;
+                    }
+                    &--grey {
+                        background-color: $-text;
+                    }
+                }
+                
+            }
+        }
+        .rights {
+            font-style: $txt-md;
+            font-weight: 500;
+            color: $-text;
+            margin-top: 32px;
+        }
+    }
+}

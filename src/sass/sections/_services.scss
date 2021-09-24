@@ -1,0 +1,193 @@
+
+//----------------Exepience & Services
+.experience-mobile-wrap {
+    display: none;
+    padding: 40px 8px 81px 8px;
+    .carousel-indicators {
+        top: 100%;
+         button {
+             margin-top: 15px;
+         }
+    }
+    .benefits {
+        height: 235px;
+        &--title {
+            font-weight: 700;
+            background-image: $-text-red-reversed;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &--subtitle {
+            color: $-white;
+            font-weight: 400;
+            line-height: $lh-26;
+            margin: 15px 0 22px 0;
+        }
+        &--contents {
+            font-size: $txt-lg;
+            color: $-white;
+            line-height: $lh-26;
+        }
+    }
+}
+.exepience {
+    padding: 80px 0 100px 0;
+}
+
+.tabs {
+    position: relative;
+    width: 100%;
+    padding: 80px 0px;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 530px;
+        a {
+            font-weight: 700;
+            font-size: $h1-hero;
+            line-height: $lh-50;
+            color: $-text !important;
+            padding-right: 40px;
+            padding-bottom: 10px;
+            text-align: right;
+            width: 100%;
+            cursor: pointer;
+            border-right: 4px solid;
+        }
+    }
+}
+
+.tabs nav a:hover,
+.tabs nav a.selected {
+    border-color: #F0145A;
+    background-image: $-text-red-reversed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.tabs .content {
+    padding: 20px 0px;
+    position: absolute;
+    top: 19%;
+    left: 42.5%;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.tabs .content.visible {
+    padding: 20px;
+    width: 620px;
+    opacity: 1;
+    text-align: left;
+  
+}
+  
+.intro-title {
+    font-size: $h2;
+    line-height: $lh-38;
+    color: $-white;
+    font-weight: 500;
+}
+  
+.intro-txt {
+    font-size: $txt-xl;
+    line-height: $lh-30;
+    color: $white;
+    margin-top: 20px;
+}
+  
+.tabs .content p { padding-bottom: 2px; }
+  
+.tabs .content p:last-of-type { padding-bottom: 0px; }
+
+
+
+.services {
+    padding-bottom: 80px;
+    &__heading {
+        margin-bottom: 48px;
+        .arrow {
+            width: 5px;
+            height: 5px;
+            border-width: 0px 2px 2px 0px;
+            border-style: solid;
+            margin: 5px 2px 2px 5.5px;
+            transform: rotate(316deg);
+        }
+        .h3-u {
+            color:$-text ;
+            line-height: $lh-17;
+            .arrow-small {
+                margin: 5px;
+            }
+        }
+        .h1-h {
+            background-image: $-red-text;
+            font-weight: 700;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;    
+        }
+    }
+    .h3 {
+        color: $-a-regular;
+        margin-bottom: 15px;
+        line-height: $lh-28;
+    }
+    .txt-lg {
+        line-height: $lh-26;
+    }
+    &__item {
+        width: 29%;
+        margin: 30px 40px 50px 0;
+    }
+    &__icon-bag {
+        background-image: url('../../images/images/card-images/services-card/card-one.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px;
+    } 
+    &__icon-briefcase {
+        background-image: url('../../images/images/card-images/services-card/card-two.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px; 
+    }  
+    &__icon-molecule {
+        background-image: url('../../images/images/card-images/services-card/card-three.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px; 
+    }  
+    &__icon-arms {
+        background-image: url('../../images/images/card-images/services-card/card-four.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px; 
+    } 
+    &__icon-shield {
+        background-image: url('../../images/images/card-images/services-card/card-five.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px; 
+    } 
+    &__icon-hammer {
+        background-image: url('../../images/images/card-images/services-card/card-six.svg');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 20px; 
+    }
+}
+

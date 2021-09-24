@@ -1,0 +1,11 @@
+.logo-clients {
+    &-wrap {
+        display: grid;
+        max-width: 1920px;
+        margin: 30px auto 0;
+        grid-template-columns: repeat(4, 2fr);
+    }
+    .img-fluid {
+        width: 100%;
+    }
+}

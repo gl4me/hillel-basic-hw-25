@@ -1,0 +1,109 @@
+.section-contacts-form {
+    .container-small {
+        max-width: 1095px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .contacts-content {
+        margin: 80px 0;
+    }
+}
+
+.corporate-contacts {
+    width: 38%;
+    .address-txt {
+        border-bottom: 4px solid #E6E6F0;
+    }
+    .contact-us {
+        margin: 40px 0;
+        .contact-mail-link {
+            font-size: $txt-xl;
+            color: #24A3FF;
+            cursor: pointer;
+            &:hover {
+                color: $-accent;
+            }
+        }
+    }
+    .cotporate-social-media {
+        border-top: 4px solid #E6E6F0;
+        .facebook {
+            &-link-blue {
+                width: 100%;
+                margin-right: 236px;
+                margin-top: 17px;
+                font-size: $txt-sm;
+                font-weight: 700;
+                line-height: $lh-17;
+                letter-spacing: $spacing;
+                text-transform: uppercase;
+                color: $-a-regular;
+                &:hover {
+                    color: $-accent;
+                }
+            }
+            &-txt {
+                 margin-left: 10px;
+            }    
+        }
+    }
+}
+
+.contact-form {
+    width: 50%;
+    background: $-bg;
+    border-radius: 12px;
+    padding: 20px;
+    .form-title{
+        font-size: $h1-hero-mobile;
+        font-weight: 700;
+        background-image: $-red-text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .feedback-txt {
+        font-size: $h3-upper;
+        font-weight: 700;
+        color: $-text;
+        text-transform: uppercase;
+        margin: 0 0 10px 10px;
+    }
+
+    .custop-form-control, .custop-form-control-txt {
+        height: 47px;
+        border: none;
+        border-radius: 8px;
+        font-size: $txt-lg;
+        line-height: $lh-26;
+        color: $-text;
+        &:focus {
+            box-shadow: none;
+            color: $-black;
+        }
+    }
+    .custop-form-control-txt {
+        height: 180px;
+    }
+
+    .button-article {
+        margin: 20px auto 0;
+    }
+}
+
+
+
+
+
+.txt-style-position {
+    margin-bottom: 20px;
+}
+
+
+.map {
+    width: 100%;
+    height: 600px;
+    margin-bottom: -7px;
+}

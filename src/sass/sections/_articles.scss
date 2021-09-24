@@ -1,0 +1,90 @@
+.section-articles {
+    background-image: url('../../images/images/background/background4_main_grey.svg');
+    .h1-hero {
+        background-image: $-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+        margin-bottom: 40px;
+    }
+}
+.breadcrumbs {
+    &--padding-top {
+        padding-top: 40px;
+        margin-bottom: 15px;
+    }
+    .h3-u {
+        position: relative;
+    }
+    .team-arrow::after {
+        position: absolute;
+        content: url('../../images/images/icon/link-arrow.svg');
+        margin-left: 8.5px;
+        top: 5%;
+        left: 78px;
+        right: 78px;
+    }
+}
+
+.articles-box {
+    .breadcrumbs--padding-top {
+        padding-top: 20px;
+        margin-bottom: 7px;
+    }
+    .h1-hero {
+        font-size: $h1-hero-mobile;
+        line-height: $lh-38;
+        margin-bottom: 20px;
+    }
+}
+
+.articles-wrap {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .expander {
+        width: 102%;
+        height: 30%;
+        max-height: 200px;
+        position: absolute;
+        bottom: 0;
+        display: flex;align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 64.5%);
+    }
+    .article-col {
+        width: 32%;
+        min-width: 250px;
+        .article {
+            width: 100%;
+            background-color: $-white;
+            margin-bottom: 20px;
+            min-width: 250px;
+            border-radius: 8px;
+            &--image {
+                img {
+                    width: 100%;
+                }
+            }
+            &--title {
+                padding: 20px 0;
+                margin: 0 20px 20px 21px;
+                border-bottom: 4px solid #E6E6F0;
+                .articles-data {
+                    margin-top: 10px;
+                    font-size: $txt-sm;
+                    color: $-text;
+                }
+            }
+            &--content {
+                padding: 0 20px 20px;
+                .articles-paragraph {
+                    font-size: $txt-md;
+                    color: $-black;
+                    line-height: $lh-22;
+                }
+            }
+        }
+    }
+}

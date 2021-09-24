@@ -1,0 +1,85 @@
+//////////txt
+
+//font-family
+$family-n :              "TT Norms";
+
+//font-size
+
+$h1-hero:              42px;
+$h1-typography:        38px;
+$h1-hero-mobile:       32px;
+$h2:                   32px;
+$h2-mobile:            22px;
+$h3:                   24px;
+$h3-mobile:            18px;
+$h3-upper:             14px;
+$h4:                   18px;
+$txt-sm:               12px;
+$txt-md:               16px;
+$txt-lg:               18px;
+$txt-xl:               21px;
+$txt-xxl:              24px;
+
+//Line-height
+$lh-50:                50px;
+$lh-38:                38px;
+$lh-30:                30px;
+$lh-28:                28px;
+$lh-26:                26px;
+$lh-22:                22px;
+$lh-21:                21px;
+$lh-18:                18px;
+$lh-17:                17px;
+$lh-14:                14px;
+
+//letter-spacing
+$spacing:              1px;
+
+//////////Color Styles
+
+$-accent:         #F0145A;
+$-black:          #000000;
+$-white:          #FFFFFF;
+
+//Main
+$-regular:        #323264;
+$-alt:            #46466E;
+$-soft:           #686887;
+
+//Active
+$-a-regular:      #24A3FF;
+$-hover:          #0085FF;
+$-active:         #006CCF;
+
+//Grey
+$-bg:             #F5F5FA;
+$-bg-alt:         #EDEDF7;
+$-text:           #B3B3BA;
+$-separator:      #E6E6F0;
+
+//Gradient
+$-g-regular:        linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$-g-soft:           linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$-red:              linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+$-supersoft:        linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$-red-text:         linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$-icon:             linear-gradient(180deg, #EF8080 0%, #F0145A 100%);
+$-text-red-reversed:linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 30.96%);
+$-main-lc:          linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+$-main-lc-mobile:   linear-gradient(180deg, rgba(50, 50, 100, 0) 10.67%, #323264 60%);
+//common br-radius
+$br--md: 8px;
+$br--lg: 12px;
+$br--lg-nav: 12px 12px 0px 0px;
+
+//seting close 
+$btn-close-color: #F0145A;
+$btn-close-width: 18px;
+$btn-close-height: 18px;
+
+//main-cention
+$main-cention--mh: calc(100vh - 145px);
+
+.navbar-toggler-icon {
+    background-image: escape-svg($-black);
+  }

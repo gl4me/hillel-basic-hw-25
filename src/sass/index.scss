@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 400;
+    src: local("TTNorms-Regular"),
+        url("../fonts/regular/TTNorms-Regular.woff2") format("woff2"),
+        url("../fonts/regular/TTNorms-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    src: local("TTNorms-Medium"),
+        url("../fonts/medium/TTNorms-Medium.woff2") format("woff2"),
+        url("../fonts/medium/TTNorms-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 700;
+    src: local("TTNorms-Bold"),
+        url("../fonts/bold/TTNorms-Bold.woff2") format("woff2"),
+        url("../fonts/bold/TTNorms-Bold.woff") format("woff");
+}
+
+// IMPORT VARIABLES CSS /CUSTOMS-BOOTSTRAP
+@import 'var';
+
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+// Layout & components
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/modal";
+// Helpers
+@import "node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/api";
+
+// IMPORT PARTIALS
+@import 'reset';
+@import 'common';
+
+
+// IMPORT SECTIONS
+@import 'sections/about';
+@import 'sections/achivments';
+@import 'sections/team-squad';
+@import 'sections/team-squad-alex';
+@import 'sections/contacts';
+@import 'sections/publication';
+@import 'sections/services-page';
+@import 'sections/header';
+@import 'sections/services';
+@import 'sections/team';
+@import 'sections/cases';
+@import 'sections/clients';
+@import 'sections/articles';
+@import 'sections/footer';
+
+@import 'media';
+

@@ -1,0 +1,48 @@
+.section-employee-profile {
+    padding: 80px 0;
+    .container-small {
+        max-width: 1095px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+
+.section-alex {
+    width: 57%;
+    .employee-profile-wrap {
+        padding: 20px 0 20px;
+        border-bottom: 4px solid $-text;
+        .employee-name {
+            font-size: $h1-hero;
+            line-height: $lh-50;
+            font-weight: 700;
+            background-image: $-red-text;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .employee-contants {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.employee-contact-link {
+    font-size: $txt-md;
+    color: #24A3FF;
+    &:hover {
+        color: $-accent;
+    }
+}
+
+.spacing {
+    &--top {
+        margin-top: 35px;
+    }
+    &--bottom {
+        margin-bottom: 35px;
+    }
+}
+

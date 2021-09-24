@@ -1,0 +1,75 @@
+#carouselExampleIndicators,
+#carouselServicesIndicators,
+#carouselAchivmentsIndicators
+.carousel-indicators {
+    button {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $-a-regular;
+        margin-left: 14px;
+    }
+}
+
+.section-team {
+    padding-bottom: 20px;
+}
+
+.team-slider-wrapper {
+    padding-bottom: 70px;
+    margin-top: 40px;
+}
+
+.team-slider {
+    &--photo-wrapper {
+        width: 31%;
+        min-width: 413px;
+        height: auto;
+    }
+    &--photo {
+        width: 100%;
+    }
+}
+
+.page {
+    &--background-team {
+        background-image: url('../../images/images/background/background3_main_grey.svg');
+		border-radius: 12px;
+    }
+}
+
+.page {
+	width: 100%;
+}
+
+.img-fluid {
+	max-width: 100%;
+    height: auto;
+}
+
+.section_team {
+	width: 69%;
+    padding: 40px;
+	align-items: center;
+	.liner-gradient {
+		background-image: $-red-text;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 42px;
+		line-height: 50px;
+	}
+}
+
+.breadcrumbs {
+	text-transform: uppercase;
+    font-size: 14px;
+	&-blue {
+		color: #24A3FF;
+	}
+}
+
+.wrap-position-alex {
+    margin-top: 20px;
+}
+
